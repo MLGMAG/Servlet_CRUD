@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+                                                               <!-- ProductServlets and Mapping -->
+    <servlet>
+        <servlet-name>AddProduct</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ProductServlets.AddProductServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductsList</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ProductServlets.ListOfProductServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductInfo</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ProductServlets.ProductInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteProduct</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ProductServlets.DeleteProductServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateProduct</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ProductServlets.UpdateProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductsList</servlet-name>
+        <url-pattern>/Products</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddProduct</servlet-name>
+        <url-pattern>/Products/AddProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductInfo</servlet-name>
+        <url-pattern>/Products/ProductInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteProduct</servlet-name>
+        <url-pattern>/Products/DeleteProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateProduct</servlet-name>
+        <url-pattern>/Products/UpdateProduct</url-pattern>
+    </servlet-mapping>
+
+                                                              <!-- ManufacturerServlets and Mapping -->
+    <servlet>
+        <servlet-name>ManufacturersList</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ManufacturerServlets.ListOfManufacturersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddManufacturer</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ManufacturerServlets.AddManufacturerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerInfo</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ManufacturerServlets.ManufacturerInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RemoveManufacturer</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ManufacturerServlets.DeleteManufacturerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateManufacturer</servlet-name>
+        <servlet-class>net.mlgmag.Servlets.controller.ManufacturerServlets.UpdateManufacturerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturersList</servlet-name>
+        <url-pattern>/Manufacturers</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddManufacturer</servlet-name>
+        <url-pattern>/Manufacturers/AddManufacturer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerInfo</servlet-name>
+        <url-pattern>/Manufacturers/ManufacturerInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RemoveManufacturer</servlet-name>
+        <url-pattern>/Manufacturers/DeleteManufacturer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateManufacturer</servlet-name>
+        <url-pattern>/Manufacturers/UpdateManufacturer</url-pattern>
+    </servlet-mapping>
+
+</web-app>
